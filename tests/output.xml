@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on darwin)" generated="20230928 15:04:07.055" rpa="false" schemaversion="4">
+<suite id="s1" name="testDemo3" source="/Users/lisandrodossantossilvafernando/Desktop/Robot Framework/Framework/tests/testDemo3.robot">
+<test id="s1-t1" name="Invalid Username" line="16">
+<kw name="validate UnSuccessful login">
+<arg>loki</arg>
+<arg>learning</arg>
+<kw name="open the broswer with the Ecomerce payment url" library="resource">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Firefox</arg>
+<arg>executable_path=/Users/lisandrodossantossilvafernando/Downloads/geckodriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230928 15:04:07.157" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" starttime="20230928 15:04:07.157" endtime="20230928 15:04:12.892"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230928 15:04:12.893" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<status status="PASS" starttime="20230928 15:04:12.892" endtime="20230928 15:04:14.711"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:07.157" endtime="20230928 15:04:14.711"/>
+</kw>
+<kw name="Fill the Login Form">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:14.712" level="INFO">Typing text 'loki' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230928 15:04:14.711" endtime="20230928 15:04:14.866"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:14.867" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20230928 15:04:14.871" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230928 15:04:14.900" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230928 15:04:14.866" endtime="20230928 15:04:14.900"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:14.901" level="INFO">Clicking button 'id:signInBtn'.</msg>
+<status status="PASS" starttime="20230928 15:04:14.900" endtime="20230928 15:04:15.208"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:14.711" endtime="20230928 15:04:15.208"/>
+</kw>
+<kw name="wait until it checks and display error message">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ErrorMessageLogin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230928 15:04:15.208" endtime="20230928 15:04:17.051"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:15.208" endtime="20230928 15:04:17.051"/>
+</kw>
+<kw name=" verify error message is correct">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${ErrorMessageLogin}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:17.083" level="INFO">${result} = Incorrect username/password.</msg>
+<status status="PASS" starttime="20230928 15:04:17.052" endtime="20230928 15:04:17.083"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${result}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230928 15:04:17.083" endtime="20230928 15:04:17.083"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:17.052" endtime="20230928 15:04:17.083"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:07.157" endtime="20230928 15:04:17.083"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230928 15:04:17.083" endtime="20230928 15:04:17.826"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:07.157" endtime="20230928 15:04:17.826"/>
+</test>
+<test id="s1-t2" name="Invalid Password" line="17">
+<kw name="validate UnSuccessful login">
+<arg>rahulshetty</arg>
+<arg>ddddd</arg>
+<kw name="open the broswer with the Ecomerce payment url" library="resource">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Firefox</arg>
+<arg>executable_path=/Users/lisandrodossantossilvafernando/Downloads/geckodriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230928 15:04:17.827" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" starttime="20230928 15:04:17.827" endtime="20230928 15:04:22.693"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230928 15:04:22.694" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<status status="PASS" starttime="20230928 15:04:22.694" endtime="20230928 15:04:24.322"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:17.827" endtime="20230928 15:04:24.322"/>
+</kw>
+<kw name="Fill the Login Form">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:24.322" level="INFO">Typing text 'rahulshetty' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230928 15:04:24.322" endtime="20230928 15:04:24.489"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:24.490" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20230928 15:04:24.498" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230928 15:04:24.520" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230928 15:04:24.489" endtime="20230928 15:04:24.520"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:24.520" level="INFO">Clicking button 'id:signInBtn'.</msg>
+<status status="PASS" starttime="20230928 15:04:24.520" endtime="20230928 15:04:24.815"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:24.322" endtime="20230928 15:04:24.816"/>
+</kw>
+<kw name="wait until it checks and display error message">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ErrorMessageLogin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230928 15:04:24.816" endtime="20230928 15:04:26.632"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:24.816" endtime="20230928 15:04:26.632"/>
+</kw>
+<kw name=" verify error message is correct">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${ErrorMessageLogin}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:26.661" level="INFO">${result} = Incorrect username/password.</msg>
+<status status="PASS" starttime="20230928 15:04:26.632" endtime="20230928 15:04:26.661"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${result}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230928 15:04:26.661" endtime="20230928 15:04:26.662"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:26.632" endtime="20230928 15:04:26.662"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:17.827" endtime="20230928 15:04:26.662"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230928 15:04:26.662" endtime="20230928 15:04:27.549"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:17.827" endtime="20230928 15:04:27.549"/>
+</test>
+<test id="s1-t3" name="Special Characters" line="18">
+<kw name="validate UnSuccessful login">
+<arg>$#%%@</arg>
+<arg>learning</arg>
+<kw name="open the broswer with the Ecomerce payment url" library="resource">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Firefox</arg>
+<arg>executable_path=/Users/lisandrodossantossilvafernando/Downloads/geckodriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230928 15:04:27.549" level="INFO">Creating an instance of the Firefox WebDriver.</msg>
+<status status="PASS" starttime="20230928 15:04:27.549" endtime="20230928 15:04:32.465"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230928 15:04:32.466" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<status status="PASS" starttime="20230928 15:04:32.465" endtime="20230928 15:04:34.045"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:27.549" endtime="20230928 15:04:34.046"/>
+</kw>
+<kw name="Fill the Login Form">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:34.046" level="INFO">Typing text '$#%%@' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230928 15:04:34.046" endtime="20230928 15:04:34.251"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:34.251" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg timestamp="20230928 15:04:34.262" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230928 15:04:34.284" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230928 15:04:34.251" endtime="20230928 15:04:34.284"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:34.285" level="INFO">Clicking button 'id:signInBtn'.</msg>
+<status status="PASS" starttime="20230928 15:04:34.284" endtime="20230928 15:04:34.580"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:34.046" endtime="20230928 15:04:34.580"/>
+</kw>
+<kw name="wait until it checks and display error message">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ErrorMessageLogin}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230928 15:04:34.580" endtime="20230928 15:04:36.410"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:34.580" endtime="20230928 15:04:36.410"/>
+</kw>
+<kw name=" verify error message is correct">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${ErrorMessageLogin}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230928 15:04:36.440" level="INFO">${result} = Incorrect username/password.</msg>
+<status status="PASS" starttime="20230928 15:04:36.410" endtime="20230928 15:04:36.440"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${result}</arg>
+<arg>Incorrect username/password.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230928 15:04:36.440" endtime="20230928 15:04:36.440"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:36.410" endtime="20230928 15:04:36.440"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:27.549" endtime="20230928 15:04:36.440"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230928 15:04:36.440" endtime="20230928 15:04:37.057"/>
+</kw>
+<status status="PASS" starttime="20230928 15:04:27.549" endtime="20230928 15:04:37.057"/>
+</test>
+<doc>To validate the login form</doc>
+<status status="PASS" starttime="20230928 15:04:07.055" endtime="20230928 15:04:37.057"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="testDemo3">testDemo3</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230928 15:04:07.155" level="ERROR">Error in file '/Users/lisandrodossantossilvafernando/Desktop/Robot Framework/Framework/resources/resource.robot' on line 3: Non-existing setting '. . .'.</msg>
+<msg timestamp="20230928 15:04:07.155" level="ERROR">Error in file '/Users/lisandrodossantossilvafernando/Desktop/Robot Framework/Framework/resources/resource.robot' on line 4: Non-existing setting '. . .'.</msg>
+<msg timestamp="20230928 15:04:07.155" level="ERROR">Error in file '/Users/lisandrodossantossilvafernando/Desktop/Robot Framework/Framework/resources/resource.robot' on line 5: Non-existing setting ''.</msg>
+<msg timestamp="20230928 15:04:07.155" level="ERROR">Error in file '/Users/lisandrodossantossilvafernando/Desktop/Robot Framework/Framework/resources/resource.robot' on line 6: Non-existing setting '. . .'.</msg>
+<msg timestamp="20230928 15:04:07.155" level="ERROR">Error in file '/Users/lisandrodossantossilvafernando/Desktop/Robot Framework/Framework/resources/resource.robot' on line 7: Non-existing setting '. . .'.</msg>
+<msg timestamp="20230928 15:04:07.156" level="ERROR">Error in file '/Users/lisandrodossantossilvafernando/Desktop/Robot Framework/Framework/resources/resource.robot' on line 8: Importing library 'Operating system' failed: ModuleNotFoundError: No module named 'Operating system'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /opt/homebrew/bin
+  /opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/lib/python311.zip
+  /opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/lib/python3.11
+  /opt/homebrew/Cellar/python@3.11/3.11.5/Frameworks/Python.framework/Versions/3.11/lib/python3.11/lib-dynload
+  /Users/lisandrodossantossilvafernando/Library/Python/3.11/lib/python/site-packages
+  /opt/homebrew/lib/python3.11/site-packages</msg>
+</errors>
+</robot>
