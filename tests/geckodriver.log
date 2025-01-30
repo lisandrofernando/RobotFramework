@@ -785,3 +785,54 @@ WebDriver BiDi listening on ws://127.0.0.1:54668
 DevTools listening on ws://127.0.0.1:54668/devtools/browser/43baa20a-cd3a-478f-a677-c2c6e1a8e65f
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
 1695935076441	Marionette	INFO	Stopped listening on port 54675
+1695935628913	geckodriver	INFO	Listening on 127.0.0.1:54871
+1695935629276	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6k/m4696yb53t78yqpd8smmf1kw0000gn/T/rust_mozprofileW1s9DI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695935631616	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1695935632175	Marionette	INFO	Listening on port 54881
+Read port: 54881
+WebDriver BiDi listening on ws://127.0.0.1:54872
+1695935632334	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54872/devtools/browser/23d2310b-2981-48da-a2fb-5d12292a996b
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+1695935639194	Marionette	INFO	Stopped listening on port 54881
+1695935639978	geckodriver	INFO	Listening on 127.0.0.1:54915
+1695935640483	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6k/m4696yb53t78yqpd8smmf1kw0000gn/T/rust_mozprofile1HnigO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695935641445	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1695935641823	Marionette	INFO	Listening on port 54923
+Read port: 54923
+WebDriver BiDi listening on ws://127.0.0.1:54916
+1695935641948	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54916/devtools/browser/b0d2175f-6919-433f-85e2-d7fd5bdf6f12
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://rahulshettyacademy.com."
+1695935651387	Marionette	INFO	Stopped listening on port 54923
+1695935692295	geckodriver	INFO	Listening on 127.0.0.1:54973
+1695935692799	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/6k/m4696yb53t78yqpd8smmf1kw0000gn/T/rust_mozprofileKUSnss"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695935693839	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1695935694230	Marionette	INFO	Listening on port 54981
+Read port: 54981
+WebDriver BiDi listening on ws://127.0.0.1:54974
+1695935694378	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54974/devtools/browser/f04c7b6c-8bc1-4ce4-bc25-d8dd41eb5da1
+1695935703819	Marionette	INFO	Stopped listening on port 54981
+JavaScript warning: https://pagead2.googlesyndication.com/bg/BAadeGEE1qHjsQ6c_rqFtjeXulPdvwUFIKdhRpM9mgY.js line 2 > eval line 586 > eval line 1 > eval, line 1: Script terminated by timeout at:
+ju@https://pagead2.googlesyndication.com/bg/BAadeGEE1qHjsQ6c_rqFtjeXulPdvwUFIKdhRpM9mgY.js line 2 > eval line 586 > eval line 1 > eval:1:105
+@https://pagead2.googlesyndication.com/bg/BAadeGEE1qHjsQ6c_rqFtjeXulPdvwUFIKdhRpM9mgY.js line 2 > eval:586:21386
+EC@https://pagead2.googlesyndication.com/bg/BAadeGEE1qHjsQ6c_rqFtjeXulPdvwUFIKdhRpM9mgY.js line 2 > eval:586:24723
+N4@https://pagead2.googlesyndication.com/bg/BAadeGEE1qHjsQ6c_rqFtjeXulPdvwUFIKdhRpM9mgY.js line 2 > eval:586:15969
+C.prototype.J</<@https://pagead2.googlesyndication.com/bg/BAadeGEE1qHjsQ6c_rqFtjeXulPdvwUFIKdhRpM9mgY.js line 2 > eval:586:36060
+Fa@https://pagead2.googlesyndication.com/bg/BAadeGEE1qHjsQ6c_rqFtjeXulPdvwUFIKdhRpM9mgY.js line 2 > eval:586:17977
+$a@https://pagead2.googlesyndication.com/bg/BAadeGEE1qHjsQ6c_rqFtjeXulPdvwUFIKdhRpM9mgY.js line 2 > eval:586:3888
+Xa@https://pagead2.googlesyndication.com/bg/BAadeGEE1qHjsQ6c_rqFtjeXulPdvwUFIKdhRpM9mgY.js line 2 > eval:586:2572
+$a/<@https://pagead2.googlesyndication.com/bg/BAadeGEE1qHjsQ6c_rqFtjeXulPdvwUFIKdhRpM9mgY.js line 2 > eval:586:3953
+E3</<@https://pagead2.googlesyndication.com/bg/BAadeGEE1qHjsQ6c_rqFtjeXulPdvwUFIKdhRpM9mgY.js line 2 > eval:586:33824
+
