@@ -17,7 +17,7 @@ ${url}          https://rahulshettyacademy.com/loginpagePractise/
 
 *** keywords ***
 open the broswer with the Ecomerce payment url
-        Create Webdriver 	    Firefox 	 executable_path=/Users/lisandrodossantossilvafernando/Downloads/geckodriver
+        Create Webdriver 	    Firefox 	
         Go To       ${url}  
 
 Close Browser Session
