@@ -20,7 +20,7 @@ validate UnSuccessful login
 
 *** Keywords ***
 open the broswer with the Ecomerce payment url
-        Create Webdriver 	    Firefox 	 executable_path=/Users/lisandrodossantossilvafernando/Downloads/geckodriver
+        Create Webdriver 	    Firefox 	 
         Go To 	 url=https://rahulshettyacademy.com/loginpagePractise/
 
 Fill the Login Form
